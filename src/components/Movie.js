@@ -9,6 +9,7 @@ const Movie = (props) => {
   const [movie, setMovie] = useState('');
 
   const { id } = useParams();
+
   const navigate = useNavigate();
 
   useEffect(() => {
