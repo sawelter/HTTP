@@ -69,11 +69,11 @@ You should now have your app running in Chrome on `http://localhost:3000`
 >
 > *Alright! You ready! Let's see you use the skills of the previous steps to build a crud function from start to finish.*
 
-- [ ] Use `EditMovieForm.js` as a model to build an `AddMovieForm` component from scratch. The component should hold all the attributes of a new movie in local state.
+- [X] Use `EditMovieForm.js` as a model to build an `AddMovieForm` component from scratch. The component should hold all the attributes of a new movie in local state.
 
-- [ ] Add in a route that allows access to `AddMovieForm`.
+- [X] Add in a route that allows access to `AddMovieForm`.
 
-- [ ] Locate the part of the ui that should redirect to your new `AddMovieForm`. Make that button works as expected.
+- [X] Locate the part of the ui that should redirect to your new `AddMovieForm`. Make that button works as expected.
 
 - [ ] In `AddMovieForm,` add an event handler for form submission. When the form is submitted, run the appropriate request for adding a movie with the component's state values.
 
