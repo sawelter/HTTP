@@ -75,9 +75,9 @@ You should now have your app running in Chrome on `http://localhost:3000`
 
 - [X] Locate the part of the ui that should redirect to your new `AddMovieForm`. Make that button works as expected.
 
-- [ ] In `AddMovieForm,` add an event handler for form submission. When the form is submitted, run the appropriate request for adding a movie with the component's state values.
+- [X] In `AddMovieForm,` add an event handler for form submission. When the form is submitted, run the appropriate request for adding a movie with the component's state values.
 
-- [ ] Make sure your component has access to and runs and modifications needed to global state and redirects to `/movies` after creation.
+- [X] Make sure your component has access to and runs and modifications needed to global state and redirects to `/movies` after creation.
 
 ### Stretch goals
 

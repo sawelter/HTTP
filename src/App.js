@@ -16,6 +16,7 @@ const App = (props) => {
   const [movies, setMovies] = useState([]);
   const [favoriteMovies, setFavoriteMovies] = useState([]);
 
+
   let { id } = useParams();
   let navigate = useNavigate();
 
@@ -50,7 +51,11 @@ const App = (props) => {
   })
 
   const addToFavorites = (movie) => {
-
+    setFavoriteMovies([...favoriteMovies, movie]);
+  }
+  
+  const removeFavorite = (id) => {
+    setFavoriteMovies(favoriteMovies.filter(movie => movie.id !== id));
   }
 
   return (
@@ -62,13 +67,13 @@ const App = (props) => {
       <div className="container">
         <MovieHeader />
         <div className="row ">
-          <FavoriteMovieList favoriteMovies={favoriteMovies} />
+          <FavoriteMovieList favoriteMovies={favoriteMovies} removeFavorite={removeFavorite}/>
 
           <Routes>
 
             <Route path="movies/edit/:id" element={<EditMovieForm setMovies={setMovies}/>} />
 
-            <Route path="movies/:id" element={<Movie deleteMovie={deleteMovie} />}/>
+            <Route path="movies/:id" element={<Movie deleteMovie={deleteMovie} addToFavorites={addToFavorites} />}/>
 
             <Route path="movies" element={<MovieList movies={movies} />} />
 
