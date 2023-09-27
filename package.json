@@ -7,7 +7,7 @@
     "frontend": "webpack serve --open",
     "backend": "node src/mocks/api.js",
     "test": "cross-env NODE_ENV=testing jest --verbose --forceExit",
-    "start": "webpack serve --open"
+    "start": "serve src"
   },
   "devDependencies": {
     "@babel/core": "7.21.0",
