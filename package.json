@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "start": "fkill :9000 :3000 -s && concurrently \"npm:backend\" \"npm:frontend\"",
+    "dev": "fkill :9000 :3000 -s && concurrently \"npm:backend\" \"npm:frontend\"",
     "frontend": "webpack serve --open",
     "backend": "node src/mocks/api.js",
-    "test": "cross-env NODE_ENV=testing jest --verbose --forceExit"
+    "test": "cross-env NODE_ENV=testing jest --verbose --forceExit",
+    "start": "webpack serve --open"
   },
   "devDependencies": {
     "@babel/core": "7.21.0",
