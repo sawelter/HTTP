@@ -32,6 +32,6 @@ api.delete('/api/movies/:id', (req, res) => {
   res.json(Data.remove(req.params.id))
 })
 
-api.listen(9000, () => {
-  console.log('listening on 9000')
-})
+// api.listen(9000, () => {
+//   console.log('listening on 9000')
+// })
