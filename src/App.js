@@ -51,7 +51,9 @@ const App = (props) => {
   })
 
   const addToFavorites = (movie) => {
-    setFavoriteMovies([...favoriteMovies, movie]);
+    if(favoriteMovies.filter(m => m.id === movie.id).length === 0) {
+      setFavoriteMovies([...favoriteMovies, movie]);
+    }
   }
   
   const removeFavorite = (id) => {
